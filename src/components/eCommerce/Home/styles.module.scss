@@ -1,0 +1,374 @@
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 1024px;
+
+.HSec1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #2b3035;
+  background: url(https://info.bingomore.com/shopify/landing/lumei/assets/img/bg-header.jpg)
+    center / cover no-repeat;
+
+  .HomeSecTitle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 18px;
+      color: white;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.HSec2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .HSec2Wrapper {
+    position: relative;
+    display: flex;
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+  .HSec2Title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    p {
+      margin: 0;
+      padding: 0;
+      &:nth-child(2) {
+        font-size: 25px;
+        font-weight: bold;
+      }
+    }
+    a {
+      font-size: 15px;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.WeekDeals {
+  background-color: black;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .weekDeals_title {
+    h5,
+    p,
+    a {
+      color: white;
+      margin-bottom: 10px;
+    }
+  }
+  .weekDeals_numbers {
+    display: flex;
+    gap: 10px;
+    .Deal {
+      color: white;
+      width: 80px;
+      height: 80px;
+      border: 3px solid rgb(192, 192, 192);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      .DealNum {
+        font-size: 26px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.Partners {
+  margin-top: 10px;
+  border-top: 2px solid rgb(208, 208, 208);
+  width: 100%;
+  padding-top: 20px;
+  .partnersSecHeader {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .Brands {
+    margin: auto;
+    margin-top: 30px;
+    width: 98%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+
+    .BrandLogo {
+      width: 15%;
+      height: 100%;
+    }
+  }
+}
+
+.bigSalesSec {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  .bigSalesContainer {
+    width: 100%;
+    margin-top: 20px;
+    height: 70vh;
+    text-align: center;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &.bigSalesContainer3Edit {
+      position: relative;
+      .bigSalesContainer3Title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        p {
+          font-weight: bold;
+          font-size: 30px;
+          margin: 0;
+          padding: 0;
+        }
+        a {
+          display: block;
+          margin-top: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .HSec1 {
+    height: 60vh;
+    width: 100%;
+    background-color: #2b3035;
+    background: url(https://info.bingomore.com/shopify/landing/lumei/assets/img/bg-header.jpg)
+      center / cover no-repeat;
+
+    .HomeSecTitle {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80%;
+        height: 505;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+        color: white;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .WeekDeals {
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+    flex-direction: column;
+    .weekDeals_title {
+      h5,
+      p,
+      a {
+        font-size: 15px;
+        margin-bottom: 3px;
+      }
+    }
+    .weekDeals_numbers {
+      display: flex;
+      .Deal {
+        width: fit-content;
+        height: fit-content;
+        padding: 5px;
+        .DealNum {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .Partners {
+    border-top: 2px solid rgb(208, 208, 208);
+    width: 100%;
+    .partnersSecHeader {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .Brands {
+      margin: auto;
+      width: 98%;
+      display: flex;
+      justify-content: space-between;
+
+      .BrandLogo {
+        width: 15%;
+        height: 100%;
+      }
+    }
+  }
+
+  // Big Sales
+  .bigSalesSec {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    .bigSalesContainer {
+      width: 100%;
+      height: 40vh;
+      text-align: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &.bigSalesContainer3Edit {
+        .bigSalesContainer3Title {
+          p {
+            font-size: 12px;
+          }
+          a {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .HSec1 {
+    height: 60vh;
+    width: 100%;
+    background-color: #2b3035;
+    background: url(https://info.bingomore.com/shopify/landing/lumei/assets/img/bg-header.jpg)
+      center / cover no-repeat;
+
+    .HomeSecTitle {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 80%;
+        height: 505;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+        color: white;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .WeekDeals {
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+    flex-direction: column;
+    .weekDeals_title {
+      h5,
+      p,
+      a {
+        font-size: 15px;
+        margin-bottom: 3px;
+      }
+    }
+    .weekDeals_numbers {
+      display: flex;
+      .Deal {
+        width: fit-content;
+        height: fit-content;
+        padding: 5px;
+        .DealNum {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .Partners {
+    border-top: 2px solid rgb(208, 208, 208);
+    width: 100%;
+    .partnersSecHeader {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .Brands {
+      margin: auto;
+      width: 98%;
+      display: flex;
+      justify-content: space-between;
+
+      .BrandLogo {
+        width: 15%;
+        height: 100%;
+      }
+    }
+  }
+
+  // Big Sales
+  .bigSalesSec {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    .bigSalesContainer {
+      width: 100%;
+      height: 40vh;
+      text-align: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &.bigSalesContainer3Edit {
+        .bigSalesContainer3Title {
+          p {
+            font-size: 12px;
+          }
+          a {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
