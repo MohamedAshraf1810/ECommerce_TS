@@ -13,6 +13,7 @@ const Cart = () => {
     removeItemHandler,
     changeQuantityHandler,
   } = useCart();
+
   return (
     <>
       <Heading title="Shopping Cart" />

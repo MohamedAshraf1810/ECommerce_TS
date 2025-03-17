@@ -46,7 +46,6 @@ const Product = memo(
 
     const addToCartHandler = () => {
       dispatch(addToCart(id));
-
       setIsBtnDisabled(true);
     };
 
@@ -58,7 +57,6 @@ const Product = memo(
         setIsLoading(true);
         dispatch(actLikeToggle(id))
           .unwrap()
-
           .then(() => setIsLoading(false))
           .catch(() => setIsLoading(false));
       } else {
@@ -76,6 +74,7 @@ const Product = memo(
             You need to login first to add this item to your wishlist.
           </Modal.Body>
         </Modal>
+
         <ProductInfo title={title} img={img} price={price}>
           <div className={wishlistBtn} onClick={likeToggleHandler}>
             {isLoading ? (

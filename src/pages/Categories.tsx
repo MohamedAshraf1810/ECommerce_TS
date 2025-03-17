@@ -6,7 +6,6 @@ import { TCategory } from "@types";
 
 const Categories = () => {
   const { error, loading, records } = useCategories();
-  console.log(records);
 
   return (
     <>

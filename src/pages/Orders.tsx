@@ -61,7 +61,7 @@ const Orders = () => {
                   </span>
                 </td>
                 <td>{el.items.length}</td>
-                <td>#{el.subTotal.toFixed(2)}</td>
+                <td>{el.subTotal.toFixed(2)} EGP</td>
               </tr>
             ))}
           </tbody>
