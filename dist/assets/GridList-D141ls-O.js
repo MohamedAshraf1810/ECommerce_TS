@@ -1,0 +1,1 @@
+import{j as t,ah as n}from"./index-BzLzT3j-.js";import{C as o,R as r}from"./Row-C34yTrzI.js";const p=({records:s,renderItem:a,emptyMessage:i})=>{const m=s.length>0?s.map(e=>t.jsx(o,{xs:6,md:3,className:"d-flex justify-content-center mb-5 mt-2",children:a(e)},e.id)):t.jsx(n,{type:"empty",message:i});return t.jsx(r,{children:m})};export{p as G};
